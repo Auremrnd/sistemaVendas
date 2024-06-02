@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="titulo">Sistema de Vendas</h1>
+
+    <!-- Formulário para realizar uma venda -->
+    <section id="principal">
+      <form id="form-venda">
+        <h2 class="subtitulo">Realizar Venda</h2>
+        <label id="product" for="produto">Produto:</label>
+        <select id="produto">
+          <!--<option value="1">Produto 1</option>-->
+        </select>
+        <label id="quantity" for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" />
+        <div id="botao-venda">
+          <button type="submit">Vender</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="vendas">
+      <h2>Vendas Realizadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody id="vendas-lista"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
